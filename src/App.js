@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
+import Intro from './components/Intro/index';
 import './App.css';
 
-const Intro = (props) => (
-  <p className="App-intro">Our First Functional Component</p>
-)
 class App extends Component {
   render() {
     return (
@@ -11,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">TV Series List</h1>
         </header>
-        <Intro />
+        <Intro message="Here you can find all of your most loved series" />
       </div>
     );
   }
